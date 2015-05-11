@@ -37,7 +37,7 @@ public class MTBlockBase extends Block {
 	
 	public int quantityDropped(Random random) {
 		
-		if(this.equals(MTBlock.fireShardOre))
+		if(this.equals(MTBlock.depletedRemnantOre))
 			return 2 + random.nextInt(1);
 		
         return 1;
@@ -46,8 +46,8 @@ public class MTBlockBase extends Block {
 	
 	public Item getItemDropped(int i, Random random, int k) {
 		
-		if(this.equals(MTBlock.fireShardOre))
-			return MTItem.fireShard;
+		if(this.equals(MTBlock.depletedRemnantOre))
+			return MTItem.depletedRemnant;
 		
         return Item.getItemFromBlock(this);
     
